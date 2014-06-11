@@ -34,7 +34,7 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="item">
-						<img src="<?php bloginfo('template_url'); ?>/images/crew.jpg" alt="...">
+						<img src="<?php bloginfo('template_url'); ?>/images/fake-crew.jpg" alt="...">
 						<div class="carousel-caption">
 						Interested in joining our crew?</br>
 						contact us at info@thistletheatre.com
