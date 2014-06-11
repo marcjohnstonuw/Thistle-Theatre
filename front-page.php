@@ -30,7 +30,7 @@ get_header(); ?>
 						by David S. Craig</br>
 						Directed by Sue Garner</br>
 						Produced by Julie McIntosh</br>
-						 ov. 14-22. Stay tuned for ticket information
+						Nov. 14-22. Stay tuned for ticket information
 						</div>
 					</div>
 					<div class="item">
