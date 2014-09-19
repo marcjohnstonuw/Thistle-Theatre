@@ -61,7 +61,7 @@ get_header(); ?>
 						<h3><?php echo $post->post_title; ?></h3>
 					</a>
 					<h4 class="author">By: <?php echo get_post_meta(get_the_ID(), "author", true); ?></h4>
-					<p class="description"><?php echo $post->post_content; ?></p>
+					<p class="description"><?php echo get_post_meta(get_the_ID(), "short_description", true); ?></p>
 					<p class="by-line">
 						Director: <?php echo get_post_meta(get_the_ID(), "director", true); ?><br />
 						Producer: <?php echo get_post_meta(get_the_ID(), "producer", true); ?>
