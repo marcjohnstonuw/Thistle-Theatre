@@ -22,6 +22,7 @@ if ( post_password_required() ) {
 
 <div id="comments" class="comments-area">
 <?php do_action( 'rootstrap_comments_before' ); ?>
+comments comments
 	<?php // You can start editing here -- including this comment! ?>
 
 	<?php if ( have_comments() ) : ?>

@@ -7,6 +7,7 @@
 
 get_header(); ?>
 <div id="content" class="site-content container">
+	fdfdfdfdfdfdfdfdfdfdfdfdfd
 	<div id="primary" class="content-area col-sm-12 col-md-8 <?php echo rootstrap_get_option( 'site_layout', 'no entry' ); ?>">
 		<div id="main" class="site-main" role="main">
 		<?php do_action( 'rootstrap_post_before' ); ?>

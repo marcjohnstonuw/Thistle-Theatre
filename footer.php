@@ -25,7 +25,6 @@
 				</nav>
 				<div class="copyright">
 					<?php echo rootstrap_get_option( 'custom_footer_text', 'rootstrap' ); ?>
-					<?php rootstrap_footer_info(); ?> 
 				</div>
 			</div><!-- .site-info -->
 			<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->

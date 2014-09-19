@@ -13,6 +13,7 @@
 get_header(); ?>
 
 <div id="content" class="site-content container">
+	page page page page
 <?php do_action( 'rootstrap_page_before' ); ?>
 	<div id="primary" class="content-area col-sm-12 col-md-8 <?php echo rootstrap_get_option( 'site_layout', 'no entry' ); ?>">
 		<?php do_action( 'rootstrap_page_start' ); ?>
