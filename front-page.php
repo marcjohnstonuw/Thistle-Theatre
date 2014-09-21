@@ -24,7 +24,7 @@ get_header(); ?>
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="<?php bloginfo('template_url'); ?>/images/having-hope-01.jpg" alt="...">
+						<?php echo the_post_thumbnail( null, 'full', null ); ?>
 						<div class="carousel-caption">
 						Having Hope at Home</br>
 						by David S. Craig</br>
@@ -34,14 +34,14 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="item">
-						<img src="<?php bloginfo('template_url'); ?>/images/fake-crew.jpg" alt="...">
+						<?php kd_mfi_the_featured_image( 'featured-image-2', 'page', 'full' ); ?>
 						<div class="carousel-caption">
 						Interested in joining our crew?</br>
 						contact us at info@thistletheatre.com
 						</div>
 					</div>
 					<div class="item">
-						<img src="<?php bloginfo('template_url'); ?>/images/generic.jpg" alt="...">
+						<?php kd_mfi_the_featured_image( 'featured-image-3', 'page', 'full' ); ?>
 						<div class="carousel-caption">
 						Here's another generic image</br>
 						Most sliders have 3+ things!

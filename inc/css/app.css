@@ -112,3 +112,38 @@ h3, h4 {
 .button-buy:hover {
 	color: #eee;
 }
+
+#primary > h1 {
+	color: white;
+}
+
+#news-container, #community-events-container {
+	padding: 15px 15px 0;
+	background-color: #9AB197;
+}
+
+#news-container h1,
+#community-events-container h1 {
+	color: black;
+}
+
+.news-item h3,
+#community-events-container h3 {
+	margin: 0 0 15px;
+}
+
+.news-item .description,
+.community-event .description  {
+	display: none;
+	clear: both;
+}
+
+.news-item.open .description,
+.community-event.open .description {
+	display: block;
+}
+
+.news-item .expand,
+.community-event .expand {
+	font-size: 14px;
+}

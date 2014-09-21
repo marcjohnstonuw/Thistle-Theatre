@@ -168,6 +168,7 @@ function rootstrap_scripts() {
 	wp_enqueue_script( 'stickymenu', get_template_directory_uri() . '/inc/js/jquery.sticky.js', array('jquery') );
 	wp_enqueue_script( 'rootstrap-bootstrapwp', get_template_directory_uri() . '/inc/js/functions.min.js', array('jquery') );
 	wp_enqueue_script( 'layerslider', get_template_directory_uri() . '/inc/js/jquery.cslider.js', array('jquery'), true );	
+  wp_enqueue_script( 'news', get_template_directory_uri() . '/inc/js/news.js', array('jquery'), true );
 	if( ( is_home() || is_front_page() ) && rootstrap_get_option('rootstrap_slider_checkbox') == 1 ) {		
 		wp_enqueue_script( 'mordernizer', get_template_directory_uri() . '/inc/js/modernizr.custom.28468.js', array('jquery'), true );
 	}	
@@ -221,3 +222,52 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 
 require get_template_directory() . '/inc/navwalker.php';
+
+
+if( class_exists( 'kdMultipleFeaturedImages' ) ) {
+
+        $args = array(
+                'id' => 'featured-image-2',
+                'post_type' => 'page',      // Set this to post or page
+                'labels' => array(
+                    'name'      => 'Featured image 2',
+                    'set'       => 'Set featured image 2',
+                    'remove'    => 'Remove featured image 2',
+                    'use'       => 'Use as featured image 2',
+                )
+        );
+
+        new kdMultipleFeaturedImages( $args );
+
+        $args3 = array(
+                'id' => 'featured-image-3',
+                'post_type' => 'page',      // Set this to post or page
+                'labels' => array(
+                    'name'      => 'Featured image 3',
+                    'set'       => 'Set featured image 3',
+                    'remove'    => 'Remove featured image 3',
+                    'use'       => 'Use as featured image 3',
+                )
+        );
+
+        new kdMultipleFeaturedImages( $args3 );
+
+        $args4 = array(
+                'id' => 'featured-image-4',
+                'post_type' => 'page',      // Set this to post or page
+                'labels' => array(
+                    'name'      => 'Featured image 4',
+                    'set'       => 'Set featured image 4',
+                    'remove'    => 'Remove featured image 4',
+                    'use'       => 'Use as featured image 4',
+                )
+        );
+
+        new kdMultipleFeaturedImages( $args4 );
+}
+
+if( class_exists( 'kdMultipleFeaturedImages' ) ) {
+    kd_mfi_the_featured_image( 'featured-image-2', 'page' );
+    kd_mfi_the_featured_image( 'featured-image-3', 'page' );
+    kd_mfi_the_featured_image( 'featured-image-4', 'page' );
+}
