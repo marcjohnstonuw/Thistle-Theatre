@@ -42,7 +42,7 @@ get_header(); ?>
 					</p>
 					<p class="production-dates">Production Dates: <?php echo get_post_meta(get_the_ID(), "dates", true); ?></p>
 					<br />
-					<a class="buy-tickets" href="#"><div class="btn button-buy">Buy Tickets</div></a>
+					<a class="buy-tickets" href="http://www.ticketscene.ca/list.php?keywords=Having+Hope+at+home"><div class="btn button-buy">Buy Tickets</div></a>
 				</div>
 			</div>
 			<h1>Past Productions</h1>
