@@ -26,25 +26,19 @@ get_header(); ?>
 					<div class="item active">
 						<?php echo the_post_thumbnail( null, 'full', null ); ?>
 						<div class="carousel-caption">
-						Having Hope at Home</br>
-						by David S. Craig</br>
-						Directed by Sue Garner</br>
-						Produced by Julie McIntosh</br>
-						Nov. 14-22. Stay tuned for ticket information
+						<?php echo get_post_meta(get_the_ID(), "carousel-caption-1", true); ?>
 						</div>
 					</div>
 					<div class="item">
 						<?php kd_mfi_the_featured_image( 'featured-image-2', 'page', 'full' ); ?>
 						<div class="carousel-caption">
-						Interested in joining our crew?</br>
-						contact us at info@thistletheatre.com
+						<?php echo get_post_meta(get_the_ID(), "carousel-caption-2", true); ?>
 						</div>
 					</div>
 					<div class="item">
 						<?php kd_mfi_the_featured_image( 'featured-image-3', 'page', 'full' ); ?>
 						<div class="carousel-caption">
-						Here's another generic image</br>
-						Most sliders have 3+ things!
+						<?php echo get_post_meta(get_the_ID(), "carousel-caption-3", true); ?>
 						</div>
 					</div>
 				</div>
@@ -57,7 +51,8 @@ get_header(); ?>
 				<span class="glyphicon glyphicon-chevron-right"></span>
 				</a>
 			</div>
-
+			<p><a href="http://127.0.0.1:8000/wp-content/uploads/2014/09/single_membership_form.pdf">Download the membership form</a></p>
+			<p><a href="http://www.ticketscene.ca/list.php?keywords=Having+Hope+at+home">Buy Tickets</a></p>
 		</div><!-- #main -->
 	</div><!-- #primary -->
 	</div>

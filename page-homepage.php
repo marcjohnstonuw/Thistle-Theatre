@@ -22,19 +22,19 @@ get_header(); ?>
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="./images/having-hope-01.jpg" alt="...">
+						<?php echo the_post_thumbnail( null, 'full', null ); ?>
 						<div class="carousel-caption">
 						Hi Mom
 						</div>
 					</div>
 					<div class="item active">
-						<img src="./images/noisy_net.jpg" alt="...">
+						<?php kd_mfi_the_featured_image( 'page-featured-image-2', 'page', 'full' ); ?>
 						<div class="carousel-caption">
 						Hi Mom
 						</div>
 					</div>
 					<div class="item active">
-						<img src="./images/logo.png" alt="...">
+						<?php kd_mfi_the_featured_image( 'page-featured-image-3', 'page', 'full' ); ?>
 						<div class="carousel-caption">
 						Hi Mom
 						</div>
